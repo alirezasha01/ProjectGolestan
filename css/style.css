@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Mj_Flow;
+    src: url("../fonts/Mj_Flow Regular_0.otf") format("otf"),
+      url("../fonts/Mj_Flow Regular_0.ttf") format("ttf"),
+      url("../fonts/Mj_Flow Regular_0.woff") format("woff"),
+      url("../fonts/Mj_Flow Regular_0.woff2") format("woff2");
+}
+* {
+    box-sizing: border-box;
+    font-weight: 800;
+    font-family: Mj_Flow;
+}
+body {
+    background: #f7f7ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: -20px 0 50px;
+}
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 30px;
+}
+h4 {
+    font-size: 16px;
+}
+a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+button {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: #ff4453;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 4px 30px;
+    font-size: 23px;
+}
+button:hover{
+    background-color:rgba(255,75,43,0.8) ;
+    border-color:#ffffff;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+form {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+    height: 100%;
+    text-align: center;
+    direction: rtl;
+}
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+.container {
+    border-radius: 13px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.form-container {
+    position: absolute;
+    height: 100%;
+}
+.sign-in-container {
+    left: 0;
+    width: 50%;
+}
+.sign-up-container {
+    width: 50%;
+    opacity: 0;
+}
+.overlay-container {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.overlay {
+    background: #ff4453;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+}
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+.overlay-right {
+    right: 0;
+}
+.social-container {
+    margin: 20px 0;
+}
